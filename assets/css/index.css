@@ -1,0 +1,91 @@
+.wraper {}
+
+.header {}
+
+.header__title {
+    background-color: #56a4fe;
+    height: 100px;
+    position: relative;
+}
+
+.header__title__description {
+    align-items: center;
+    padding-top: auto;
+    padding-bottom: auto;
+    top: 45px;
+    padding-left: 20px;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header__title__user {
+    /* float: right; */
+    position: absolute;
+    width: 400px;
+    height: 35px;
+    right: 0;
+    font-size: 12px;
+    border-bottom-left-radius: 75px;
+    background-color: White;
+}
+
+.header__title__user>h3 {
+    float: right;
+    padding: 10px;
+    margin: 0;
+}
+
+.header__system {
+    background-color: #56a4fe;
+    width: 30%;
+    height: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 1px;
+    float: right;
+}
+
+.header__system__link {
+    padding: 5px;
+    text-decoration-line: none;
+    color: #fff !important;
+}
+
+.container {}
+
+.container__center {
+    box-shadow: 0 0 0 1px orange;
+    border-radius: 4px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.container__center__title {
+    text-align: center;
+    padding: 10px;
+}
+
+.container__center__description {
+    padding: 10px 10px;
+    display: flex;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container__center__description--text {
+    width: 80px;
+}
+
+.container__center__description--input {
+    flex: 1;
+}
+
+.container__center__btn {
+    display: block;
+    margin: 10px auto;
+}

@@ -68,7 +68,7 @@
 
     //Establishes the connection
     $conn = mysqli_init();
-    mysqli_ssl_set($conn, NULL, NULL,"D:\study\DigiCertGlobalRootCA.crt.pem",NULL,NULL);
+    echo mysqli_ssl_set($conn, NULL, NULL,"D:\study\DigiCertGlobalRootCA.crt.pem",NULL,NULL);
     mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306, MYSQLI_CLIENT_SSL);
     if (mysqli_connect_errno($conn)) {
     die('Failed to connect to MySQL: '.mysqli_connect_error());
@@ -96,8 +96,8 @@
         session_start();
         $_SESSION['User_name'] = $User;
         $_SESSION['id'] = 1; 
-        header('Location: index.php');
+        // header('Location: index.php');
     } else{
-        header('Location: login.html');
+        // header('Location: login.html');
     }
 ?>

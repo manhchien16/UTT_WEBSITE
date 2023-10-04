@@ -62,7 +62,7 @@
 
 
     echo $servername = "baoanhdb.mysql.database.azure.com";
-    $username = "baoanhhihi";
+    $username = "baoanhhihi@baoanhdb";
     $password = "Vuchien@123";
     $database = "utt";
     

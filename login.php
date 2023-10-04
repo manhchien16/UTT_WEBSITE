@@ -62,9 +62,9 @@
 
 
     echo $servername = $_ENV['DB_HOST'];
-    $username = $_ENV['DB_USER'];
-    $password = $_ENV['DB_PASSWORD'];
-    $database = $_ENV['utt'];
+    echo $username = $_ENV['DB_USER'];
+    echo $password = $_ENV['DB_PASSWORD'];
+    echo $database = $_ENV['utt'];
     
     // Kết nối tới cơ sở dữ liệu
     $conn = new mysqli($servername, $username, $password, $database);

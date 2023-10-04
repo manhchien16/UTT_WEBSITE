@@ -61,10 +61,10 @@
 <?php
 
 
-    echo $servername = "baoanhdb.mysql.database.azure.com";
-    $username = "baoanhhihi@baoanhdb";
-    $password = "Vuchien@123";
-    $database = "utt";
+    $servername = $_ENV['DB_HOST'];
+    $username = $_ENV['DB_USER'];
+    $password = $_ENV['DB_PASSWORD'];
+    $database = $_ENV['DB_NAME'];
     
     // Kết nối tới cơ sở dữ liệu
     $conn = new mysqli($servername, $username, $password, $database);
@@ -81,7 +81,7 @@
     $Input_user = mysqli_real_escape_string($conn, $User);
     $Input_pass = mysqli_real_escape_string($conn, $Password);
 
-   echo  $sql = "SELECT * FROM `account` WHERE User = '$Input_user' and Password = '$Input_pass'";
+   $sql = "SELECT * FROM `account` WHERE User = '$Input_user' and Password = '$Input_pass'";
    
 
     $result = mysqli_query($conn, $sql);

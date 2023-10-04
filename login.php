@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
 
     $host = "yepps.mysql.database.azure.com";

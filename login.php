@@ -61,10 +61,10 @@
 <?php
 
 
-    $servername = $_ENV['DB_HOST'];
-    $username = $_ENV['DB_USER'];
-    $password = $_ENV['DB_PASSWORD'];
-    $database = $_ENV['DB_NAME'];
+    $servername = $_ENV['baoanhdb.mysql.database.azure.com'];
+    $username = $_ENV['baoanhhihi'];
+    $password = $_ENV['Vuchien@123'];
+    $database = $_ENV['utt'];
     
     // Kết nối tới cơ sở dữ liệu
     $conn = new mysqli($servername, $username, $password, $database);

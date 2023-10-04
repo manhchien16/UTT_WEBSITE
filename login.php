@@ -61,7 +61,7 @@
 <?php
 
 
-    $servername = $_ENV['DB_HOST'];
+    echo $servername = $_ENV['DB_HOST'];
     $username = $_ENV['DB_USER'];
     $password = $_ENV['DB_PASSWORD'];
     $database = $_ENV['utt'];

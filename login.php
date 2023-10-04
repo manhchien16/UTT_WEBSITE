@@ -72,6 +72,8 @@
     // Kiểm tra kết nối
     if ($conn->connect_error) {
         die("Kết nối tới cơ sở dữ liệu thất bại: " . $conn->connect_error);
+    }else{
+       echo ("ket noi thanh cong");
     }
 
     $User = $_POST["User"];

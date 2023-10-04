@@ -6,7 +6,7 @@
 ?>
 
 <?php
-  $host = "yepps.mysql.database.azure.com";
+      $host = "yepps.mysql.database.azure.com";
     $username = "baoanhhihi";
     $password = "Vuchien@123";
     $database = "utt";
@@ -14,12 +14,9 @@
 
     //tao ket noi
     $conn = new mysqli($host, $username, $password, $database);
-    echo ("ket noi thanh cong");
     // Kiểm tra kết nối
     if ($conn->connect_error) {
         die("Kết nối tới cơ sở dữ liệu thất bại: " . $conn->connect_error);
-    }else{
-       echo ("ket noi thanh cong");
     }
 ?>
 

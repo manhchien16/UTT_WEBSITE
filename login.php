@@ -61,13 +61,14 @@
 <?php
 
 
-    $servername = $_ENV['DB_HOST'];
-    $username = $_ENV['DB_USER'];
-    $password = $_ENV['DB_PASSWORD'];
-    $database = 'utt';
-    
-    // Kết nối tới cơ sở dữ liệu
-    $conn = new mysqli($servername, $username, $password, $database);
+    $host = "yepps.mysql.database.azure.com";
+    $username = "baoanhhihi";
+    $password = "Vuchien@123";
+    $database = "utt";
+
+
+    //tao ket noi
+    $conn = new mysqli($host, $username, $password, $database);
     echo ("ket noi thanh cong");
     // Kiểm tra kết nối
     if ($conn->connect_error) {

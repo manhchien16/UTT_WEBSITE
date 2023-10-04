@@ -60,19 +60,19 @@
 
 <?php
 
-    
-    $host = 'baoanhdb.mysql.database.azure.com';
-    $username = 'baoanhhihi';
-    $password = 'Vuchien@123';
-    $db_name = 'utt';
 
-    //Establishes the connection
-    $conn = mysqli_init();
-    mysqli_ssl_set($conn, NULL, NULL,"D:\study\DigiCertGlobalRootCA.crt.pem",NULL,NULL);
-    mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306, MYSQLI_CLIENT_SSL);
-    if (mysqli_connect_errno($conn)) {
-    die('Failed to connect to MySQL: '.mysqli_connect_error());
-    }  
+    $servername = "baoanhdb.mysql.database.azure.com";
+    $username = "baoanhhihi";
+    $password = "Vuchien@123";
+    $database = "utt";
+    
+    // Kết nối tới cơ sở dữ liệu
+    $conn = new mysqli($servername, $username, $password, $database);
+    
+    // Kiểm tra kết nối
+    if ($conn->connect_error) {
+        die("Kết nối tới cơ sở dữ liệu thất bại: " . $conn->connect_error);
+    }
 
     $User = $_POST["User"];
     $Password = $_POST["Password"];

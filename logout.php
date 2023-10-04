@@ -13,7 +13,7 @@ if (isset($_COOKIE[session_name()])) {
 session_destroy();
 
 // Chuyển hướng người dùng về trang đăng nhập
-header("Location: login.php");
+header("Location: login.html");
 exit();
 ?>
                 

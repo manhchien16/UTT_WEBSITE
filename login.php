@@ -1,4 +1,4 @@
-<?php
+ <?php
     // // lay dulieu tu form dangnhap
     // $User = $_POST["User"];
     // $Password = $_POST["Password"];
@@ -61,7 +61,7 @@
 <?php
 
 
-    $servername = "baoanhdb.mysql.database.azure.com";
+    echo $servername = "baoanhdb.mysql.database.azure.com";
     $username = "baoanhhihi";
     $password = "Vuchien@123";
     $database = "utt";

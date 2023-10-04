@@ -61,10 +61,10 @@
 <?php
 
 
-    echo $servername = $_ENV['DB_HOST'];
-    echo $username = $_ENV['DB_USER'];
-    echo $password = $_ENV['DB_PASSWORD'];
-    echo $database = 'utt';
+    $servername = $_ENV['DB_HOST'];
+    $username = $_ENV['DB_USER'];
+    $password = $_ENV['DB_PASSWORD'];
+    $database = 'utt';
     
     // Kết nối tới cơ sở dữ liệu
     $conn = new mysqli($servername, $username, $password, $database);

@@ -9,13 +9,13 @@
 
     //tao ket noi
     $conn = new mysqli($host, $username, $password, $database);
-    echo ("ket noi thanh cong");
     // Kiểm tra kết nối
     if ($conn->connect_error) {
         die("Kết nối tới cơ sở dữ liệu thất bại: " . $conn->connect_error);
-    }else{
-       echo ("ket noi thanh cong");
     }
+    // else{
+    //    echo ("ket noi thanh cong");
+    // }
 
     $User = $_POST["User"];
     $Password = $_POST["Password"];
@@ -33,7 +33,7 @@
     // ini_set('display_errors', '0');
 
     $count = mysqli_num_rows($result);
-    $row = mysqli_fetch_assoc($result); //hien thi len form
+    // $row = mysqli_fetch_assoc($result); //hien thi len form
 
     if($count == 1){
         session_start();

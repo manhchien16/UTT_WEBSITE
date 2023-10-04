@@ -76,14 +76,14 @@
        echo ("ket noi thanh cong");
     }
 
-    $User = $_POST["User"];
-    $Password = $_POST["Password"];
+    echo $User = $_POST["User"];
+    echo $Password = $_POST["Password"];
 
     //trich xuat du lieu nhap bang ham 
     $Input_user = mysqli_real_escape_string($conn, $User);
     $Input_pass = mysqli_real_escape_string($conn, $Password);
 
-   $sql = "SELECT * FROM `account` WHERE User = '$Input_user' and Password = '$Input_pass'";
+   echo $sql = "SELECT * FROM `account` WHERE User = '$Input_user' and Password = '$Input_pass'";
    
 
     $result = mysqli_query($conn, $sql);

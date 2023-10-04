@@ -64,10 +64,10 @@
     echo $servername = $_ENV['DB_HOST'];
     echo $username = $_ENV['DB_USER'];
     echo $password = $_ENV['DB_PASSWORD'];
-    echo $database = $_ENV['utt'];
+    echo $database = 'utt';
     
     // Kết nối tới cơ sở dữ liệu
-    $conn = new mysqli($servername, $username, $password, $database);
+    echo $conn = new mysqli($servername, $username, $password, $database);
     
     // Kiểm tra kết nối
     if ($conn->connect_error) {

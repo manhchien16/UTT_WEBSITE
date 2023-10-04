@@ -37,7 +37,7 @@
     // $row = mysqli_fetch_assoc($result); //hien thi len form
 
     if($count == 1){
-        session_start();
+        
         $_SESSION['User_name'] = $User;
         $_SESSION['id'] = 1; 
         header('Location: index.php');

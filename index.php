@@ -1,7 +1,7 @@
 <?php 
   session_start();
   if(!isset($_SESSION['User_name']) and !isset($_SESSION['id'])) {
-    header("Location: insert.php");
+    header("Location: login.php");
   }
 ?>
 

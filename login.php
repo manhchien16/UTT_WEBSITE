@@ -31,10 +31,9 @@
     $result = mysqli_query($conn, $sql);
 
     // tắt hiển thị lỗi
-    // ini_set('display_errors', '0');
+    ini_set('display_errors', '0');
 
     $count = mysqli_num_rows($result);
-    // $row = mysqli_fetch_assoc($result); //hien thi len form
 
     if($count == 1){
         

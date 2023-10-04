@@ -1,6 +1,6 @@
 <?php
 $host = 'baoanhdb.mysql.database.azure.com';
-$username = 'baoanhhihi';
+echo $username = 'baoanhhihi';
 $password = 'Vuchien@123';
 $db_name = 'utt';
 
